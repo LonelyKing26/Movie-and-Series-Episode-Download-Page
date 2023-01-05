@@ -15,7 +15,7 @@
     <section class="container">
         
         
-        <form action="get.php" method="post">
+        <form action="result.php" method="post">
             <div class="from-group pt-4">
                 <label for="#title">Title</label> <small>(max 100)</small>
                 <input type="text" name="title" data-id="title" class="form-control" style="width: 98%;">

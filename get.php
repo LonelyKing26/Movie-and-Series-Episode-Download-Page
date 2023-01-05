@@ -91,12 +91,12 @@ include('config.php');
             
             ?>
             <?php
-               $a = "https://codesource.io/";
+            //    $a = "https://codesource.io/";
 
-               $domain = parse_url($a);
+            //    $domain = parse_url($a);
                
-               echo $a;
-               echo "The domain is ".$domain['host'];
+            //    echo $a;
+            //    echo "The domain is ".$domain['host'];
             ?>
             <section class="container quality-container text-center">
                 <div class="title text-cenet mt-5 mb-5">
@@ -158,7 +158,7 @@ include('config.php');
                         Download -----------
                     </h3>
                 </div>
-                <div class="content">
+                <!-- <div class="content">
                     <div class="4k">
                         <div class="sec-head">
                             4k Content
@@ -260,8 +260,12 @@ include('config.php');
                             </div>
                         </div>
                     </div>
+                </div> -->
+                <div class="content">
+                    <?php 
+                        $sql = mysqli_query($conn, "SELECT * FROM links_data WHERE ")
+                    ?>
                 </div>
-
                 
             </section>
             <input type="text" data-id="slug" hidden value="<?php echo $slug;?>">
